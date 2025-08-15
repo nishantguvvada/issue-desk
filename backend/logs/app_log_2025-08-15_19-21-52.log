@@ -1,0 +1,221 @@
+2025-08-15 19:21:52,272 - INFO - Model Invoked: sdk_http_response=HttpResponse(
+  headers=<dict len=11>
+) candidates=[Candidate(
+  avg_logprobs=-0.08666514266620982,
+  content=Content(
+    parts=[
+      Part(
+        text="""Total resolutions of issues: 470.
+"""
+      ),
+    ],
+    role='model'
+  ),
+  finish_reason=<FinishReason.STOP: 'STOP'>
+)] create_time=None model_version='gemini-2.0-flash' prompt_feedback=None response_id='dzufaLP-BvrbnvgP_PGf2Qw' usage_metadata=GenerateContentResponseUsageMetadata(
+  candidates_token_count=11,
+  candidates_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=11
+    ),
+  ],
+  prompt_token_count=194,
+  prompt_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=194
+    ),
+  ],
+  total_token_count=205
+) automatic_function_calling_history=[UserContent(
+  parts=[
+    Part(
+      text="You are a Employee Portal Manager, you ONLY answer questions related to the portal. Any question not related to the portal is responded with a generic fallback response `IDIOT, I'm not supposed to answer that!`. Now answer the question: What are the total resolutions of issues?"
+    ),
+  ],
+  role='user'
+), Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={},
+        name='fetch_stats'
+      )
+    ),
+  ],
+  role='model'
+), Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        name='fetch_stats',
+        response={
+          'result': CallToolResult(
+            content=[
+              <... Max depth ...>,
+            ],
+            isError=False,
+            structuredContent={
+              <... Max depth ...>: <... Max depth ...>,
+              <... Max depth ...>: <... Max depth ...>,
+              <... Max depth ...>: <... Max depth ...>
+            }
+          )
+        }
+      )
+    ),
+  ],
+  role='user'
+)] parsed=None
+NoneType: None
+2025-08-15 19:24:48,845 - INFO - Processing request of type ListToolsRequest
+2025-08-15 19:24:48,845 - INFO - AFC is enabled with max remote calls: 10.
+2025-08-15 19:24:51,426 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-08-15 19:24:51,426 - INFO - Processing request of type CallToolRequest
+2025-08-15 19:24:52,275 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-08-15 19:24:52,291 - INFO - Model Invoked: sdk_http_response=HttpResponse(
+  headers=<dict len=11>
+) candidates=[Candidate(
+  avg_logprobs=-0.03200569376349449,
+  content=Content(
+    parts=[
+      Part(
+        text="""Total resolutions: 470
+"""
+      ),
+    ],
+    role='model'
+  ),
+  finish_reason=<FinishReason.STOP: 'STOP'>
+)] create_time=None model_version='gemini-2.0-flash' prompt_feedback=None response_id='KzyfaPDxD_KW1PIPiPT-8A0' usage_metadata=GenerateContentResponseUsageMetadata(
+  candidates_token_count=8,
+  candidates_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=8
+    ),
+  ],
+  prompt_token_count=194,
+  prompt_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=194
+    ),
+  ],
+  total_token_count=202
+) automatic_function_calling_history=[UserContent(
+  parts=[
+    Part(
+      text="You are a Employee Portal Manager, you ONLY answer questions related to the portal. Any question not related to the portal is responded with a generic fallback response `IDIOT, I'm not supposed to answer that!`. Now answer the question: How many issues were resolved in total?"
+    ),
+  ],
+  role='user'
+), Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={},
+        name='fetch_stats'
+      )
+    ),
+  ],
+  role='model'
+), Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        name='fetch_stats',
+        response={
+          'result': CallToolResult(
+            content=[
+              <... Max depth ...>,
+            ],
+            isError=False,
+            structuredContent={
+              <... Max depth ...>: <... Max depth ...>,
+              <... Max depth ...>: <... Max depth ...>,
+              <... Max depth ...>: <... Max depth ...>
+            }
+          )
+        }
+      )
+    ),
+  ],
+  role='user'
+)] parsed=None
+NoneType: None
+2025-08-15 19:25:53,478 - INFO - Processing request of type ListToolsRequest
+2025-08-15 19:25:53,478 - INFO - AFC is enabled with max remote calls: 10.
+2025-08-15 19:25:55,876 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-08-15 19:25:55,876 - INFO - Processing request of type CallToolRequest
+2025-08-15 19:25:59,572 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 200 OK"
+2025-08-15 19:25:59,572 - INFO - Model Invoked: sdk_http_response=HttpResponse(
+  headers=<dict len=11>
+) candidates=[Candidate(
+  avg_logprobs=-0.04891131932918842,
+  content=Content(
+    parts=[
+      Part(
+        text="""The main themes of the latest issues are: login failures and unreliable two-factor authentication, slow page loading times and session timeouts, mobile view issues, file upload problems, announcement syncing issues, incorrect data in payslips, and an unreliable search function.
+"""
+      ),
+    ],
+    role='model'
+  ),
+  finish_reason=<FinishReason.STOP: 'STOP'>
+)] create_time=None model_version='gemini-2.0-flash' prompt_feedback=None response_id='bjyfaIiBA_-vnvgPiPLh4Qs' usage_metadata=GenerateContentResponseUsageMetadata(
+  candidates_token_count=52,
+  candidates_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=52
+    ),
+  ],
+  prompt_token_count=739,
+  prompt_tokens_details=[
+    ModalityTokenCount(
+      modality=<MediaModality.TEXT: 'TEXT'>,
+      token_count=739
+    ),
+  ],
+  total_token_count=791
+) automatic_function_calling_history=[UserContent(
+  parts=[
+    Part(
+      text="You are a Employee Portal Manager, you ONLY answer questions related to the portal. Any question not related to the portal is responded with a generic fallback response `IDIOT, I'm not supposed to answer that!`. Now answer the question: What are the main themes of the latest issues?"
+    ),
+  ],
+  role='user'
+), Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={},
+        name='fetch_issues'
+      )
+    ),
+  ],
+  role='model'
+), Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        name='fetch_issues',
+        response={
+          'result': CallToolResult(
+            content=[
+              <... Max depth ...>,
+            ],
+            isError=False,
+            structuredContent={
+              <... Max depth ...>: <... Max depth ...>
+            }
+          )
+        }
+      )
+    ),
+  ],
+  role='user'
+)] parsed=None
+NoneType: None
