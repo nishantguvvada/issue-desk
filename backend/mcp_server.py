@@ -11,7 +11,7 @@ def fetch_issues() -> str:
     return database_request()
 
 @mcp.tool
-def fetch_stats():
+def fetch_stats() -> str:
     """
         Use the tool to retrieve total number of resolutions, issues and unresolved tickets statistics around employee portal issues.
         The statistics include:
