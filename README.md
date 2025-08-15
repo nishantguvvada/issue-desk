@@ -27,19 +27,23 @@ An AI-powered chatbot application designed to provide employees with real-time u
 
 ## Key Components
 
-1. Ask Bot Endpoint (POST /)
+### 1. Ask Bot Endpoint (`POST /`)
 
-- Receives user queries and returns AI-generated responses based on the MCP server data.
+- Receives user queries.
+- Returns AI-generated responses based on MCP server data.
 
-2. MCP Server Tools
+### 2. MCP Server Tools
 
-- fetch_issues(): Returns the latest issues from the database.
-- fetch_stats(): Returns statistics like total issues, resolved tickets, and unresolved tickets.
+- **`fetch_issues()`**: Returns the latest issues from the database.
+- **`fetch_stats()`**: Returns statistics including:
+  - Total issues
+  - Resolved tickets
+  - Unresolved tickets
 
-3. Summarize Issues Tool
+### 3. Summarize Issues Tool
 
 - Generates concise summaries of the latest portal issues for easier reading.
 
-4. Report Statistics Tool
+### 4. Report Statistics Tool
 
-- Provides an understanding of current issue resolution statuses using MCP server statistics.
+- Provides insights into current issue resolution statuses using MCP server statistics.
